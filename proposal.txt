@@ -1,0 +1,47 @@
+Translation page
+
+Purpose:
+Translate manga in a collaborative setting.
+
+Translations will be performed by fans (users logged in to the web site). 
+
+Using the site:
+Homepage
+All pages will have a banner at the top which contains navigation information.
+Home, completed projects, ongoing projects, discussion forum
+Login information (current user, log out, similar to Facebook)
+
+
+
+The home page will contain a list of currently active projects (maybe a banner with a rotation of projects, similar to wordpress or Steam)
+	Contains a “What's hot” item—what most people are currently contributing to
+
+Two sections of the page: Ongoing and Completed. There will be ways to search both types of project. 
+
+
+
+When users log in to the site, activity feed shows up. The activity feed shows activity in projects you've marked or have contributed to.
+
+
+
+Project page
+Click on a project linked anywhere on the site.
+
+Top banner
+Generic project information (picture, title, author, # likes, etc)
+Chapter list (sorted by order, translation status, # contriubtors)
+
+Chapter list can be sorted however is useful, and can have a progress bar or color associated with translation status maybe. Something that makes it easy to see what the status is. 
+
+
+Chapter page
+Click on a chapter from the project page (also anywhere on the site)
+
+Top bar
+Chapter information—showing progress, number of contributors
+List to show each page in the chapter with progress/stats/etc.
+Page page
+Click on a page link
+
+
+Users will translate a marked line on an image of the original raw file. These translations will be aggregated and placed in a list for people to vote on the best translation. Each page will be viewed separately with a discussion area (real-time chat) where people can discuss the reason behind choosing one translation over another. The scoring system will be an upvote/downvote idea 
