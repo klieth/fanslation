@@ -456,11 +456,26 @@
       , options = $.extend({}, $target.data(), $this.data())
       , slideIndex
 
-    $target.carousel(options)
+      var type = $this.data().slide;
+      var fallback = type == 'next' ? 'first' : 'last';
+      var slides = $target.data().carousel.$element;
+      console.log(type + ", " + fallback);
+    var tarId = slides.find('.item.active')[type]().attr('id') || slides.find('.item')[fallback]().attr('id');
+    console.log(tarId);
+    if ($this.parent().hasClass('tabbable')) {
+        $($this.siblings('ul')).children().each(function(index, item) {
+            if ($(item).children('a').attr('href') == '#' + tarId) {
+                $($(item).children('a')[0]).tab('show');
+            }
+        });
+    } else {
+    	$target.carousel(options)
 
-    if (slideIndex = $this.attr('data-slide-to')) {
-      $target.data('carousel').pause().to(slideIndex).cycle()
+    	if (slideIndex = $this.attr('data-slide-to')) {
+    		$target.data('carousel').pause().to(slideIndex).cycle()
+    	}
     }
+
 
     e.preventDefault()
   })

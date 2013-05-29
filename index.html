@@ -9,6 +9,10 @@
 			body {
 				padding-top: 60px;
 			}
+			.carousel-inner > .item {
+				margin:auto;
+				border:1px solid black;
+			}
 		</style>
 		<title>Insert title here</title>
 	</head>
@@ -16,6 +20,11 @@
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container-fluid">
+					<form class="navbar-form pull-right">
+						<input class="span2" type="text" placeholder="Email">
+						<input class="span2" type="password" placeholder="Password">
+						<button type="submit" class="btn">Sign in</button>
+					</form>
 					<a class="brand" href="#">Fanslation</a>
 					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
@@ -27,12 +36,38 @@
 		<div class="container">
 			<div class="row" style="margin:auto;">
 				<div class="span12">
-					<div id="myCarousel" class="carousel ">
-						<div class="carousel-inner">
-							<div class="active item"><div style="margin:auto;border:1px solid black;width:870px;height:500px;">&nbsp;</div><div class="carousel-caption"><p>Current</p></div></div>
-							<div class="item"><div style="margin:auto;border:1px solid black;width:870px;height:500px;">&nbsp;</div><div class="carousel-caption"><p>Another</p></div></div>
-							<div class="item"><div style="margin:auto;border:1px solid black;width:870px;height:500px;">&nbsp;</div><div class="carousel-caption"><p>Third item</p></div></div>
+					<div id="myCarousel" class="carousel tabbable tabs-below">
+						<div class="carousel-inner tab-content">
+							<div id="tab1" class="active item tab-pane">
+								<div style="width:870px;height:500px;">&nbsp;</div>
+								<div class="carousel-caption">
+									<p>Current</p>
+								</div>
+							</div>
+							<div id="tab2" class="item tab-pane">
+								<div style="width:870px;height:500px;">&nbsp;</div>
+								<div class="carousel-caption">
+									<p>Another</p>
+								</div>
+							</div>
+							<div id="tab3" class="item tab-pane">
+								<div style="width:870px;height:500px;">&nbsp;</div>
+								<div class="carousel-caption">
+									<p>Third item</p>
+								</div>
+							</div>
 						</div>
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#tab1" data-toggle="tab">Current</a>
+							</li>
+							<li>
+								<a href="#tab2" data-toggle="tab">Another</a>
+							</li>
+							<li>
+								<a href="#tab3" data-toggle="tab">Third item</a>
+							</li>
+						</ul>
 						<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 						<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 					</div>
@@ -50,7 +85,7 @@
 				<div class="span6">
 					<h3>In progress</h3>
 					<div class="btn-group btn-group-vertical btn-block">
-						<a href="#" class="btn">Working 1</a>
+						<a href="project.php?id=0" class="btn">Working 1</a>
 						<a href="#" class="btn">Working 2</a>
 						<a href="#" class="btn">Working 3</a>
 					</div>
